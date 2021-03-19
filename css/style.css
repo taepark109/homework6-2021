@@ -82,7 +82,7 @@ header{
   display: flex;
   flex-flow:row wrap;
   justify-content: center;
-
+  align-content:center;
 }
 
 /*Requirement 8*/
@@ -91,7 +91,6 @@ header{
   margin: 10px;
   width: 300px;
 }
-*/
 
 /*Requirement 9*/
 #logo{
@@ -102,7 +101,7 @@ header{
    width: 25px;
    animation-iteration-count: 1;
    **/
-   animation-name: :logo_grow 
+   animation-name:logo_grow;
    animation-duration:15s; 
    animation-iteration-count: 1;
 
@@ -124,13 +123,12 @@ header{
 @keyframes logo_grow{
   /*Your code here.*/
   from{
-      opacity: 0;
-      width: 25px;
+    opacity: 0;
+    width: 25px;
   }
   to{
-
-      opacity: 1;
-      width: 420px;
+    opacity: 1;
+    width: 420px;
   }
 } 
 
@@ -167,7 +165,7 @@ header{
 /*Your code here again.*/ 
 @media (prefers-reduced-motion) {
   #logo{
-    animation-name: logo_grow;
+    animation:none;
   }
 }
 
